@@ -14,7 +14,7 @@
 @mixin weight ($weight, $color: null) {
     font-weight: $weight;
     color: $color;
-    @content
+    @content;
 }
 
 @mixin img-center ($top :null, $width: null) {
@@ -24,4 +24,23 @@
     margin-top: $top;
     max-width: $width;
     @content;
+}
+
+@mixin bg-themes($btn-themes) {
+    @each $theme, $color in $btn-themes {
+       .#{$theme} {
+           background-color: $color;
+        &:hover {
+            background-color: lighten($color, 10%);
+            }
+        }
+    }
+}
+
+@mixin col-themes($col-themes) {
+    @each $theme, $color in $col-themes {
+       .#{$theme} {
+           background-color: $color;
+        }
+    }
 }

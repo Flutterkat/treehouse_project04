@@ -15,10 +15,9 @@
     padding: $gutter 0;
     display: block;
     width: 100%;
-    background-color: $link-color;
     &:hover {
-      color: $link-text-color-complement;
-      background-color: $link-color-hover-light;
+      color: $link-color-hover;
+      background-color: $primary-color;
       transition: 
       background-color .2s ease-in-out, 
       color .2s ease-in-out;

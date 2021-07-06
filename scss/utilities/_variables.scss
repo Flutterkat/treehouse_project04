@@ -3,11 +3,37 @@ $primary-font-color: #777;
 $primary-color: #58e1c1;
 $link-color: #51ddfc;
 $link-color-hover: #fff;
-$link-color-hover-light: lighten($link-color, 10%);
-$link-text-color-complement: complement($link-color);
+$warning: #fd7856;
+$error: #e4757a;
+$info: #927bc1;
+$success: #63cc82;
 
 //layout
 $gutter: 10px;
 
 //media queries
 $break: 768px;
+
+//themes
+$btn-themes: (
+    "default": $link-color,
+    "error":$error,
+    "info": $info,
+    "success": $success,
+    "warning": $warning
+);
+
+$col-themes: (
+    'theme.col-1': $info,
+    'theme.col-2': $warning,
+    'theme.col-3': #deb2ee,
+    'theme.col-4': #7ee6fd,
+    'theme.col-5': #88d9a0,
+    'theme.col-6': #4da2bb,
+    'theme.col-7': #ec9fa3,
+    'theme.col-8': #fd9f85,
+    'theme.col-9': $error,
+    'theme.col-10': $success,
+    'theme.col-11': $link-color,
+    'theme.col-12': #80e8d1
+);
