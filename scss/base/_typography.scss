@@ -1,0 +1,43 @@
+/* =============================================*/
+/*              Universal                       */
+/* =============================================*/
+* {
+    font-family: 'Lato', sans-serif;
+    color: $primary-font-color;
+    box-sizing: border-box;
+  }
+  
+  p {
+    line-height: 1.45em;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+/* ============================================= */
+/*              Typography                       */
+/* ============================================= */
+
+.headline-primary {
+  color: $primary-color;
+  margin-left: $gutter;
+}
+
+.headline-secondary {
+  @include weight(300px, $primary-font-color);
+}
+
+.link {
+  @include weight(700px, $link-color);
+}
+
+.blockquote {
+  @include weight(300px);
+  font-size: 1.5em;
+  font-style: italic;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 8px solid $primary-color;
+  border-radius: 5px;
+}

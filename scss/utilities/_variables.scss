@@ -1,1 +1,13 @@
+//color
+$primary-font-color: #777;
+$primary-color: #58e1c1;
+$link-color: #51ddfc;
+$link-color-hover: #fff;
+$link-color-hover-light: lighten($link-color, 10%);
+$link-text-color-complement: complement($link-color);
 
+//layout
+$gutter: 10px;
+
+//media queries
+$break: 768px;

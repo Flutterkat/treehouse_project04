@@ -1,0 +1,18 @@
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+
+.img-avatar {
+    @include img-center ($gutter, 100%);
+    max-height: 100%;
+  }
+  
+  .img-frame {
+    @include img-center ($gutter, 100%);;
+    padding: 13px;
+    border: 1px solid #ccc;
+  }
+  
+  .img-logo {
+    @include img-center;
+  }
